@@ -12,7 +12,7 @@
 10. Footer
 --------------- */
 
-/* General */
+/* 1.General */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -142,7 +142,7 @@ p {
     height: 0.9375rem;
 }
 
-/* Navbar */
+/* 2.Navbar */
 .header_wrapper .navbar {
     padding: 0.9375rem 0;
     background-color: var(--bg-white);
@@ -152,20 +152,76 @@ p {
     transition: background 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
 }
 
-/* Banner */
+.header_wrapper .navbar-toggler {
+    border: none;
+    color: var(--primary-text);
+    line-height: 2;
+}
 
-/* About */
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
 
-/* Rooms */
+.header_wrapper .nav-item {
+    margin: 0 0.625rem;
+}
 
-/* Services */
+.header_wrapper .nav-item .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    display: inline-block;
+}
 
-/* Team */
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link.active{
+    color: var(--secondary-text);
+}
 
-/* Gallery */
+.navbar .header-scrolled {
+    position: fixed;
+    top: -1px; /* to hide the border below navbar on scroll*/
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(225, 225, 225, 0.85);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
 
-/* Price */
+@keyframes fadeInDown {
+    0%{
+        top: -30%;
+    }
+    50%{
+        top: -15%;
+    }
+    100%{
+        top: 0;
+    }
+}
 
-/* Blog */
+
+/* 3.Banner */
+.banner_Wrapper {
+    height: 40.625rem;
+}
+.banner_wrapper .swiper {
+    width: 100%;
+    height: 100%;
+}
+/* 4.About */
+
+/* 5.Rooms */
+
+/* 6.Services */
+
+/* 7.Team */
+
+/* 8.Gallery */
+
+/* 9.Price */
+
+/* 10.Blog */
 
 /* Footer */
